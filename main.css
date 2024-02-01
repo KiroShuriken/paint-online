@@ -1,0 +1,98 @@
+body {
+  display: grid;
+  margin: 0;
+  grid-template: auto 1fr/1fr;
+  background-color: gray;
+}
+
+.save, .reset {
+  height: 3rem;
+  cursor: pointer;
+}
+.save:hover, .reset:hover {
+  transition: 70ms;
+  transform: scale(1.2);
+}
+
+.navBar {
+  background-color: #cccccc;
+  display: grid;
+  grid-template: 1fr/3rem auto auto auto 1fr;
+  gap: 1rem;
+  padding: 0.25rem;
+  align-items: center;
+}
+
+.navBar__icons {
+  width: 3rem;
+}
+
+.navBar__colorpicker input {
+  height: 100%;
+}
+
+.navBar__colorpicker {
+  height: 100%;
+}
+
+.navBar__swatches {
+  display: grid;
+  align-content: center;
+  grid-template: 2rem 2rem/2rem 2rem 2rem 2rem 2rem;
+  gap: 2px;
+}
+
+.navBar__brush div img {
+  height: 2rem;
+}
+
+.navBar__brush {
+  display: grid;
+  align-items: center;
+  height: 6rem;
+}
+
+.navBar__brush div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navBar__ball {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.drawArea {
+  margin: 0.8rem;
+}
+
+#draw {
+  cursor: url("images/pencil.png") 0 32, pointer;
+}
+
+.swatch {
+  cursor: pointer;
+}
+.swatch:hover {
+  transition: 70ms;
+  transform: scale(1.2);
+}
+
+@media (width <= 600px) {
+  .navBar {
+    grid-template: 1fr 1fr/5rem 10rem 5rem;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 0.8rem;
+  }
+  .navBar__ball {
+    grid-column: 3/-1;
+  }
+  .navBar__brush {
+    margin-left: 10rem;
+  }
+  .navBar__colorpicker {
+    margin-right: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */

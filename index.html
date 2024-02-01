@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Onlline</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navBar">
+        <div class="navBar__icons">
+            <img src="images/save.svg" alt="" class="save">
+            <img src="images/reset.svg" alt="" class="reset">
+        </div>
+        <div class="navBar__colorpicker">
+            <input type="color" name="colorpicker" id="colorpicker">
+        </div>
+        <div class="navBar__swatches">
+            <button class="swatch" data-color="#282A36"></button>
+            <button class="swatch" data-color="#44475A"></button>
+            <button class="swatch" data-color="#6272A4"></button>
+            <button class="swatch" data-color="#8BE9FD"></button>
+            <button class="swatch" data-color="#50FA7B"></button>
+            <button class="swatch" data-color="#FFB86C"></button>
+            <button class="swatch" data-color="#FF79C6"></button>
+            <button class="swatch" data-color="#BD93F9"></button>
+            <button class="swatch" data-color="#FF5555"></button>
+            <button class="swatch" data-color="#F1FA8C"></button>
+        </div>
+        <div class="navBar__brush">
+            <div class="brush">
+                <img src="images/brush.svg" alt="">
+                <input type="range" name="size" id="brushSize" min="1">
+            </div>
+            <div class="eraser">
+                <img src="images/eraser.svg" alt="">
+                <input type="range" name="size" id="eraserSize" min="1">
+            </div>
+        </div>
+        <div class="navBar__ball"></div>
+    </div>
+    <div class="drawArea">
+        <canvas id="draw" class="draw"></canvas>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
